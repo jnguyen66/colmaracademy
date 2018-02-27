@@ -1,0 +1,12 @@
+.flex-container{
+  display:flex;
+}
+
+.container{
+  width: 960px;
+  margin: 0 auto;
+}
+
+header nav{
+  margin: 10px 10px 10px auto;
+}
