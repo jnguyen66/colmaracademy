@@ -2,11 +2,88 @@
   display:flex;
 }
 
+body{
+  font-size: 16px;
+  font-family: Helvetica;
+}
+
 .container{
-  width: 960px;
+  width: 100%;
   margin: 0 auto;
+}
+header{
+  height: 64px;
+ background-color: red;
 }
 
 header nav{
-  margin: 10px 10px 10px auto;
+  margin: 1.5rem 1.5rem 1.5rem auto;
+  align-items: center;
+}
+
+header .logo{
+  margin-left: 1.5rem;
+  align-items: center;
+}
+
+.logo img{
+  height: 3rem;
+  background-color: red;
+}
+.logo span{
+  font-size: 1.5rem;
+}
+.logoDecA{
+  font-weight: bold;
+
+}
+
+nav span{
+  margin-left: 1rem;
+}
+
+
+/*Banner Section*/
+.banner{
+  align-items: center;
+}
+.bannerImg{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 2rem 1.5rem;
+  width: 60%;
+  height: 50rem;
+  background-color: blue;
+  background-image: url('../images/banner.jpg');
+}
+
+.bannerText{
+  width: 30%;
+  flex-direction: column;
+  justify-content:space-between;
+  background-color: lightgrey;
+  height: 25rem;
+  margin-top: 2rem;
+}
+
+.bannerText h1{
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.bannerText span{
+  font-size: 2rem;
+}
+button{
+  padding: 4rem auto;
+}
+.bannerText .button{
+  color: white;
+  font-size: 2rem;
+  height: 15%;
+  vertical-align: middle;
+  padding: auto auto;
+  text-align: center;
+  background-color: blue;
 }
