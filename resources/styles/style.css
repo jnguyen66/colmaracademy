@@ -1,14 +1,20 @@
+html{
+    font-size: 16px;
+}
 .flex-container{
   display:flex;
 }
+.vert-flex-container{
+  display:flex;
+  flex-direction: column;
+}
 
 body{
-  font-size: 16px;
   font-family: Helvetica;
 }
 
 .container{
-  width: 100%;
+  width: 90rem;
   margin: 0 auto;
 }
 header{
@@ -46,6 +52,7 @@ nav span{
 /*Banner Section*/
 .banner{
   align-items: center;
+  background-color: lightgrey;
 }
 .bannerImg{
   background-position: center;
@@ -60,11 +67,10 @@ nav span{
 
 .bannerText{
   width: 30%;
-  flex-direction: column;
   justify-content:space-between;
-  background-color: lightgrey;
   height: 25rem;
   margin-top: 2rem;
+  margin-left: 1.5rem;
 }
 
 .bannerText h1{
@@ -74,16 +80,51 @@ nav span{
 
 .bannerText span{
   font-size: 2rem;
+  line-height: 3rem;
 }
 button{
   padding: 4rem auto;
 }
 .bannerText .button{
+  height: 20%;
+  text-align: center;
+  background-color: gray;
+}
+.button span{
   color: white;
   font-size: 2rem;
-  height: 15%;
   vertical-align: middle;
-  padding: auto auto;
-  text-align: center;
-  background-color: blue;
+  position: relative;
+  top: 25%;
+}
+
+/*Content Section*/
+.content{
+  margin-top: 2rem;
+  width: 100%;
+}
+
+
+.contentLeft, .contentRight{
+  margin-left: 1.5rem;
+}
+.contentLeft{
+    background-color: red;
+    width: 60%;
+
+}
+
+.contentLeft div{
+  height: 30rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../images/information-main.jpg');
+}
+
+.contentLeft h1{
+  font-size: 3rem;
+  margin: 2rem auto 1.5rem 0;
+  font-weight: bold;
 }
