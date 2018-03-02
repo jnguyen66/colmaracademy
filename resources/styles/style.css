@@ -14,7 +14,7 @@ body{
 }
 
 .container{
-  width: 90rem;
+  width: 100%
   margin: 0 auto;
 }
 header{
@@ -82,9 +82,7 @@ nav span{
   font-size: 2rem;
   line-height: 3rem;
 }
-button{
-  padding: 4rem auto;
-}
+
 .bannerText .button{
   height: 20%;
   text-align: center;
@@ -95,22 +93,30 @@ button{
   font-size: 2rem;
   vertical-align: middle;
   position: relative;
-  top: 25%;
+  top: auto;
 }
 
-/*Content Section*/
+/*Content/Thesis Section*/
 .content{
-  margin-top: 2rem;
+
   width: 100%;
+  background-color: orange;
 }
 
 
 .contentLeft, .contentRight{
-  margin-left: 1.5rem;
+  margin: 2rem 0 1.5rem 2rem;
 }
 .contentLeft{
     background-color: red;
     width: 60%;
+
+
+}
+.contentRight{
+    background-color: blue;
+    width: 40%;
+    border-left: 0.062rem solid gray
 
 }
 
@@ -123,8 +129,116 @@ button{
   background-image: url('../images/information-main.jpg');
 }
 
-.contentLeft h1{
+.headlineText{
   font-size: 3rem;
-  margin: 2rem auto 1.5rem 0;
   font-weight: bold;
+}
+
+.content h1{
+    margin: 2rem auto 1.5rem 0;
+}
+.contentLeft p{
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0.5rem auto 2rem 0
+}
+.textStyle{
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.75rem;
+}
+
+
+
+.smContentImg{
+  width: 35%;
+  height: 12rem;
+  margin: 1rem;
+}
+
+.contentRight .flex-container {
+  border: 0.062rem solid gray;
+
+}
+
+.contentRight .vert-flex-container{
+  justify-content: center;
+  width: 65%;
+}
+.medHeadlines{
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+.contentRight h3{
+  margin-bottom: 0.5rem;
+}
+
+.contentRight span{
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.75rem;
+}
+
+.contentRight  a{
+  font-size: 1.25rem;
+  color: lightblue;
+}
+
+.thesisVideo{
+  margin-top: 0;
+  width: 100%;
+}
+
+#thesisRight{
+  margin-right: 1rem;
+  border: none;
+}
+
+
+/*Learn Section*/
+.learnSection{
+  background-color: green;
+  align-items: center;
+
+}
+.learnSection .headlineText{
+margin: 2rem 0;
+}
+.learnSection img{
+  width: 100%;
+
+}
+
+.learnSection span{
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+}
+
+.learnSection span,
+.learnSection h2{
+  width: 85%;
+}
+
+.learnSection .vert-flex-container{
+  width:27%;
+  margin: 1rem 1rem;
+  background-color: blue;
+}
+
+.learnText{
+  margin: 1rem 0 2rem 2rem;
+  display:flex;
+  flex-direction: column;
+}
+
+.learnSection .medHeadlines{
+  margin-bottom: 0.5rem;
+}
+
+.row, .row2{
+  justify-content: center;
+}
+
+.row2{
+  margin-bottom: 1rem;
 }
