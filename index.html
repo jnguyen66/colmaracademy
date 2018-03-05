@@ -13,13 +13,16 @@
         <header class='flex-container'>
           <div class='logo flex-container'>
             <img src='./resources/images/ic-logo.svg'/>
+            <img class='mobileNav' src='./resources/images/ic-on-campus.svg'/>
+            <img class='mobileNav' src='./resources/images/ic-online.svg'/>
+            <img class='mobileNav' src='./resources/images/ic-login.svg'/>
             <span class='logoDecA'>COLMAR</span><span class='logoDecB'>ACADEMY</span>
           </div>
           <nav class='flex-container'>
-            <span>On Campus</span>
-            <span>Online</span>
-            <span>For Companies</span>
-            <span>Sign In</span>
+            <a href='#' class='normNav' title="On Campus">On Campus</a>
+            <a href='#' class='normNav' title="Online">Online</a>
+            <a href='#' class='normNav' title="For Companies">For Companies</a>
+            <a href='#' class='normNav' title="Sign In">Sign In</a>
           </nav>
         </header>
 
@@ -37,7 +40,7 @@
 
 
           <!--Content Section-->
-          <div class='content flex-container'>
+          <div class='content hideContent flex-container'>
             <div class='contentLeft vert-flex-container'>
               <div class='lgContentImg'></div>
 
@@ -53,29 +56,32 @@
 
             <div class='contentRight vert-flex-container'>
               <div class='flex-container'>
-                <img class='smContentImg' src='./resources/images/information-orientation.jpg'>
+                <img class='smContentImg orientation' src='./resources/images/information-orientation.jpg'/>
+                <div class='smContentImg mobileOrientation'></div>
                 <div class='vert-flex-container'>
                 <h3 class='medHeadlines'>Orientation Date</h3>
                 <span>Tue 10/11 & Wed 10/12: 8am-3pm</span>
-                <a>Read more</a>
+                <a href='#'>Read more</a>
                 </div>
               </div>
 
               <div class='flex-container'>
-                <img class='smContentImg' src='./resources/images/information-campus.jpg'>
+                <img class='smContentImg campus' src='./resources/images/information-campus.jpg'>
+                <div class='smContentImg mobileCampus'></div>
                 <div class='vert-flex-container'>
                 <h3 class='medHeadlines'>Our Campus</h3>
                 <span>Find which campus is close by you</span>
-                <a>Read more</a>
+                <a href='#'>Read more</a>
                 </div>
               </div>
 
               <div class='flex-container'>
-                <img class='smContentImg' src='./resources/images/information-guest-lecture.jpg'>
+                <img class='smContentImg guest' src='./resources/images/information-guest-lecture.jpg'>
+                <div class='smContentImg mobileGuest'></div>
                 <div class='vert-flex-container'>
                 <h3 class='medHeadlines'>Our Guest Lecture</h3>
                 <span>Join a keynote with Oliver Sack about music in medical treatment</span>
-                <a>Read more</a>
+                <a href='#'>Read more</a>
                 </div>
               </div>
             </div>
@@ -85,26 +91,26 @@
 <!--Learing Section-->
 <div class='learnSection vert-flex-container'>
   <h1 class='headlineText'>Start Learning</h1>
-  <div class='row flex-container'>
-    <div class='vert-flex-container '>
+  <div class='row flex-container '>
+    <a href='#' class='vert-flex-container'>
       <img src='./resources/images/course-software.jpg'/>
       <div class='learnText'>
       <h2 class='medHeadlines'>Software engineering</h2>
       <span>COURSES</span>
       <span>Web development, Mobile Development, iOT, APIs</span>
       </div>
-    </div>
+    </a>
 
-    <div class='vert-flex-container'>
+    <a href='#' class='vert-flex-container'>
       <img src='./resources/images/course-computer-art.jpg'/>
       <div class='learnText'>
       <h2 class='medHeadlines'>Computer Art</h2>
       <span>COURSES</span>
       <span>Imagining & Design, Web Design, Motion Graphics, & Visual Effects, Computer Animation</span>
       </div>
-    </div>
+    </a>
 
-    <div class='vert-flex-container'>
+    <a href='#' class='vert-flex-container'>
       <img src='./resources/images/course-design.jpg'/>
       <div class='learnText'>
       <h2 class='medHeadlines'>Design</h2>
@@ -112,28 +118,28 @@
       <span>User Experience Design, User Research, Visual Design</span>
       </div>
     </div>
-  </div>
+  </a>
 
   <div class='row2 flex-container'>
-    <div class='vert-flex-container '>
+    <a href='#' class='vert-flex-container '>
       <img src='./resources/images/course-data.jpg'/>
       <div class='learnText'>
       <h2 class='medHeadlines'>Data</h2>
       <span>COURSES</span>
       <span>Data Science, Big Data, SQL, Data Visualization</span>
       </div>
-    </div>
+    </a>
 
-    <div class='vert-flex-container'>
+    <a href='#' class='vert-flex-container'>
       <img src='./resources/images/course-business.jpg'/>
       <div class='learnText'>
       <h2 class='medHeadlines'>Business</h2>
       <span>COURSES</span>
       <span>Product Development, Business Development, Startup</span>
       </div>
-    </div>
+    </a>
 
-    <div class='vert-flex-container'>
+    <a href='#' class='vert-flex-container'>
       <img src='./resources/images/course-marketing.jpg'/>
       <div class='learnText'>
       <h2 class='medHeadlines'>Marketing</h2>
@@ -141,12 +147,15 @@
       <span>Analytics, Content M Mobile Marketing</span>
       </div>
     </div>
-  </div>
+  </a>
 </div>
 
 <!--Thesis Section-->
-<div class='thesis content flex-container'>
+<div class='thesis vert-flex-container'>
+<h1 class='headlineText'>Thesis exhibit</h1>
+<div class='content flex-container'>
   <div class='contentLeft vert-flex-container'>
+
     <video  class='thesisVideo' controls>
       <source  src="./resources/videos/thesis.mp4" type="video/mp4">
          <source src="thesis.ogg" type="video/ogg">
@@ -180,6 +189,16 @@
     </div>
   </div>
 </div>
+</div>
+
+<footer class='flex-container'>
+  <span class='leftFoot'>&copy Colmar Academy.
+    All rights Reserved</span>
+  <div class='rightFoot'>
+  <a href='#' >Terms</a>
+  <a href='#' >Privacy</a>
+  </div>
+</footer>
 
 
 
